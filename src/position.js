@@ -3,7 +3,8 @@ const axios = require("axios");
 module.exports = {
   getCurrentIp: async () => {
     var response = await axios.get("https://api.ipify.org?format=json");
-    console.log(`Current IP: ${response.data.ip}`);
+    console.log(`Using current IP: ${response.data.ip}`);
+    console.log("");
     return response.data.ip;
   },
   getCurrentLocation: async ip => {

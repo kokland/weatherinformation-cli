@@ -18,10 +18,11 @@ module.exports = {
       pressureUnit: current.location.pressure.unit
     };
     // console.log(report);
-
-    console.log("Temperatur: ", report.temperature);
-    console.log("Luftfuktighet", report.humidity);
-    console.log("Vind: ", `${report.windSpeed} ${report.windDirection}`);
-    console.log("Lufttrykk:", `${report.pressure} ${report.pressureUnit}`);
+    console.log("---");
+    console.log("Temperature (C): \t", report.temperature);
+    console.log("Humidity:\t\t", report.humidity);
+    console.log("Wind:\t\t\t", `${report.windSpeed} ${report.windDirection}`);
+    console.log("Pressure:\t\t", `${report.pressure} ${report.pressureUnit}`);
+    console.log("---");
   }
 };

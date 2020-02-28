@@ -1,7 +1,7 @@
 {
-  "name": "weather-cli",
+  "name": "weatherinformation-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple CLI used to get the current weather-information at your location, based on IP Geolocation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
     "weather": "./src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kim Økland",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
