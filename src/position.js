@@ -10,6 +10,7 @@ module.exports = {
   getCurrentLocation: async ip => {
     var response = await axios.get(`https://get.geojs.io/v1/ip/geo/${ip}.json`);
     return {
+      countryName: response.data.country,
       city: response.data.city,
       lat: response.data.latitude,
       long: response.data.longitude

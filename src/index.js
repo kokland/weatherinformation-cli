@@ -5,6 +5,7 @@ const clear = require("clear");
 const figlet = require("figlet");
 const position = require("./position");
 const weather = require("./weather");
+
 clear();
 console.log(
   chalk.yellow(figlet.textSync("Weather-CLI", { horizontalLayout: "fitted" }))
