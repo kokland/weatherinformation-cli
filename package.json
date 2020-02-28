@@ -1,11 +1,15 @@
 {
   "name": "weatherinformation-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple CLI used to get the current weather-information at your location, based on IP Geolocation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kokland/weatherinformation-cli"
   },
   "bin": {
     "weather": "./src/index.js"
