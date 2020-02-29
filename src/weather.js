@@ -23,11 +23,11 @@ module.exports = {
       lang: "en"
     });
 
-    console.log("---");
+    console.log("\n");
     console.log("Temperature (C): \t", report.temperature);
     console.log("Humidity:\t\t", report.humidity);
     console.log("Wind:\t\t\t", `${beaufortScale.desc} ${report.windDirection}`);
     console.log("Pressure:\t\t", `${report.pressure} ${report.pressureUnit}`);
-    console.log("---");
+    console.log("\n");
   }
 };
