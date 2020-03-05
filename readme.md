@@ -16,9 +16,9 @@ weather
 Using current IP: 92.x.x.x
 
 ---
-Temperature (C):    4.3
-Humidity:		    72.4
-Wind:               Light breeze NW
-Pressure:		    998.4 hPa
+Temperature (C):  4.3
+Humidity:		      72.4
+Wind:             Light breeze NW
+Pressure:		      998.4 hPa
 ---
 ```
