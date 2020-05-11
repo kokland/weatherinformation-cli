@@ -14,13 +14,14 @@ module.exports = {
     const url = `https://api.sehavniva.no/tideapi.php?lat=${latitude}&lon=${longitude}&fromtime=${fromtime}&totime=${totime}&datatype=tab&refcode=cd&place=&file=&lang=en&interval=10&dst=0&tzone=&tide_request=locationdata`;
     var response = await axios.get(url);
     const json = parser.xml2json(response.data);
-    printHighLow(json.tide.locationdata.data);
-  }
+    if (json.tide.locationdata.data) {
+      printHighLow(json.tide.locationdata.data);
+    }
+  },
 };
 
-printHighLow = data => {
-  console.log("Tidal water details:");
-  data.waterlevel.map(row => {
+printHighLow = (data) => {
+  data.waterlevel.map((row) => {
     var now = new Date();
     var timestamp = new Date(row.time);
 
