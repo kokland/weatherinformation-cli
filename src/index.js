@@ -1,14 +1,10 @@
 #!/usr/bin/env node
-const chalk = require("chalk");
-const clear = require("clear");
-const figlet = require("figlet");
 const position = require("./position");
 const weather = require("./weather");
 const tidevann = require("./tidevann");
-clear();
-console.log(
-  chalk.green(figlet.textSync("Weather-CLI", { horizontalLayout: "fitted" }))
-);
+const menu = require('./menu');
+
+menu.printHeaderText();
 
 position.getCurrentLocation().then(async ({ lat, long }) => {
   await weather.getWeather(lat, long);
