@@ -1,6 +1,6 @@
 # Weatherinformation-cli
-
-a simple CLI used to check the current weather at your location based on IP Geolocation
+...
+a simple CLI used to check the current weather at your location based on IP Geolocation...
 
 ## Usage:
 
