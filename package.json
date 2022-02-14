@@ -15,7 +15,7 @@
   "author": "Kim Økland",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.26.0",
     "beaufort-scale": "^1.1.2",
     "chalk": "^4.0.0",
     "clear": "^0.1.0",
